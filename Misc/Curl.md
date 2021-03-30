@@ -1,4 +1,4 @@
-#Curl
+# Curl
 
 ### This will print the OS and architecture of the web application host.
 ```
