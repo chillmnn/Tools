@@ -1,5 +1,3 @@
-# Curl
-
 ### If the web application is vulnerable to Command Injection...
 
 ### From a terminal this will filter Curl and only print the OS and architecture of the web application host.
