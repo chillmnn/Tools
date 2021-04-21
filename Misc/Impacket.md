@@ -21,3 +21,7 @@ pip3 install -r /opt/impacket/requirements.txt
 cd /opt/impacket/ && python3 ./setup.py install
 ```
 
+### Basic secretsdump.py usage.
+```
+secretsdump.py backup@<Domain or IP>
+```
