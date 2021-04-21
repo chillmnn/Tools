@@ -7,7 +7,7 @@ sudo gem install evil-winrm
 
 ### Basic usage.
 ```
-evil-winrm -i <IP> -u <Target Username> -H <NT Hash>
+evil-winrm -i <IP> -u <Target Username> -H <NT Hash, no colons>
 ```
 
 Fred:500:a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1:b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2:::
