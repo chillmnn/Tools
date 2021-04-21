@@ -25,3 +25,8 @@ cd /opt/impacket/ && python3 ./setup.py install
 ```
 secretsdump.py <Target Username>@<Domain or IP>
 ```
+
+### Basic GetNPUser usage.
+```
+impacket-GetNPUsers <Domain>/<Target Username> -no-pass
+```
