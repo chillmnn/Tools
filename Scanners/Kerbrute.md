@@ -2,5 +2,5 @@
 
 ### Run from /go/bin directory.
 ```
-./kerbrute userenum -d <Domain>.local --dc <Domain>.local <Userlist.txt> -t 100
+./kerbrute userenum --dc <Domain>.local -d <Domain>.local <Userlist.txt> -t 100
 ```
