@@ -15,6 +15,21 @@ sudo neo4j console
 bloodhound
 ```
 
+### Bypass PowerShell
+```
+powershell -ep bypass
+```
+
+### Run SharpHound on victim.
+```
+. .\Downloads\SharpHound.ps1
+```
+
+### Collect all of the info into a .json file.
+```
+Invoke-Bloodhound -CollectionMethod All -Domain CONTROLLER.local -ZipFileName loot.zip
+```
+
 ### Forgot your Neo4j password?
 * If already running, terminate Neo4j.
 * Delete the auth file. ```sudo rm -rf  ./data/dbms/auth```.
