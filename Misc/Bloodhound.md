@@ -15,3 +15,8 @@ sudo neo4j console
 bloodhound
 ```
 
+### Forgot your Neo4j password?
+Start the Neo4j console as usual.
+Then, navigate to ```http://localhost:7474/```
+Enter this in the browser CMD line. ```:SERVER change-password```
+
