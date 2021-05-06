@@ -12,5 +12,5 @@ dpkg -s <package name>
 
 ### Secure copy a remote file to local directory
 ```
-scp <RemoteUsername>@<IP>:C:/<RemoteDirectory>/<FileName>.zip <LocalDirectory>
+scp <RemoteUsername>@<IP>:C:/<RemoteDirectory>/<FileName>.zip /<LocalDirectory>/<LocalDirectory
 ```
