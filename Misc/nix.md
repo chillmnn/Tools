@@ -9,3 +9,8 @@ base64 -d <filename.txt>
 ```
 dpkg -s <package name>
 ```
+
+### Secure copy a remote file to local directory
+```
+scp <RemoteUsername>@<IP>:C:/<RemoteDirectory>/<FileName>.zip <LocalDirectory>
+```
