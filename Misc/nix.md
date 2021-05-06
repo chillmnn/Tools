@@ -14,3 +14,8 @@ dpkg -s <package name>
 ```
 scp <RemoteUsername>@<IP>:C:/<RemoteDirectory>/<FileName>.zip /<LocalDirectory>/<LocalDirectory
 ```
+
+### RDP using rdesktop.
+```
+rdesktop -u <UserName> -d <Domain> -p <Password>  <IP>:<PORT>
+```
