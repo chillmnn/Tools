@@ -19,3 +19,8 @@ scp <RemoteUsername>@<IP>:C:/<RemoteDirectory>/<FileName>.zip /<LocalDirectory>/
 ```
 rdesktop -u <UserName> -d <Domain> -p <Password>  <IP>:<PORT>
 ```
+
+### Using curl to upload a file directly to upload point.
+```
+curl -X POST -F "submit:<value>" -F "<file-parameter>:@<path-to-file>" <site>
+```
