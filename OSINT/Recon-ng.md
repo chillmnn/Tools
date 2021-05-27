@@ -66,3 +66,17 @@ options set source <domain.com>
 ```
 run
 ```
+
+### Create a report
+```
+reporting/html
+```
+
+### Useful Modules
+| Module | Description |
+|--------|-------------|
+| recon/domains-contacts/whois_pocs | Search domain for contact information |
+| recon/profiles-profiles/profiler | Search the organizations social media presence |
+| recon/domains-hosts/mx_spf_ip | Identify the organization's mail-based DNS records |
+| recon/domains-hosts/brute_hosts | Search for subdomains |
+| recon/domains-contacts/metacrawler | Crawl domain for common files |
