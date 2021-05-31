@@ -187,4 +187,7 @@ nmap --script dns-zone-transfer.nse --script-args dns-zone-transfer.domain= <dom
 cat nmap.txt.gnmap | grep -i "Up" | awk '/Up/{print $2}'
 ```
 
-
+### Example of scanning a webserver and then piping its output to Nikto for vulnerability scanning
+```
+nmap -p80,443 <IP>/24 -oG - | nikto.pl -h -
+```
