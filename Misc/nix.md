@@ -28,8 +28,8 @@ curl -X POST -F "submit:<value>" -F "<file-parameter>:@<path-to-file>" <site>
 ### Linux Enumeration commands.
 | Local Linux Bash Command | Result |
 |--------------------------|--------|
-| uname -a | Show all available system information. |
-| hostname | Show computer host name. |
+| ```uname -a``` | Show all available system information. |
+| ```hostname``` | Show computer host name. |
 
 route
 	
