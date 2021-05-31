@@ -54,10 +54,11 @@ curl -X POST -F "submit:<value>" -F "<file-parameter>:@<path-to-file>" <site>
 | ```whoami``` | Show current user name. |
 | ```id``` | Show current user information. |
 | ```sudo -l``` | List programs current user can run as root. |
-| ```find | head``` | Find all files in the current directory and sub-directories. |
 | ```find / -iname *.txt``` | Find all txt files (case insensitive) in /. |
 | ```find / -type f -exec grep -l "password" {} \;``` | List file names containing the word "password". |
 | ```find . -type f -name ".*"``` | Find all hidden files. |
+
+"find | head" Find all files in the current directory and sub-directories.
 
 ### Linux Metasploit commands with post/linux/enum_system module
 * enum_configs
