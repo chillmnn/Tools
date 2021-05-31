@@ -46,66 +46,18 @@ curl -X POST -F "submit:<value>" -F "<file-parameter>:@<path-to-file>" <site>
 | ```cat /etc/resolv.conf``` | List DNS servers host is using. |
 | ```cat /etc/network/interfaces``` | List interface IP configuration. |
 | ```cat /etc/passwd``` | List all users on the system. |
-
-cat /etc/group
-	
-
-List all groups on the system.
-
-cat /etc/shadow
-	
-
-Show user hashes (privileged command).
-
-users
-	
-
-List currently logged in users.
-
-w
-	
-
-List currently logged in users and their processes.
-
-lastlog
-	
-
-Show when all users last logged in.
-
-whoami
-	
-
-Show current user name.
-
-id
-	
-
-Show current user information.
-
-sudo -l
-	
-
-List programs current user can run as root.
-
-find | head
-	
-
-Find all files in the current directory and sub-directories.
-
-find / -iname *.txt
-	
-
-Find all txt files (case insensitive) in /.
-
-find / -type f -exec grep -l "password" {} \;
-	
-
-List file names containing the word "password".
-
-find . -type f -name ".*"
-	
-
-Find all hidden files.
+| ```cat /etc/group``` | List all groups on the system. |
+| ```cat /etc/shadow``` | Show user hashes (privileged command). |
+| ```users``` | List currently logged in users. |
+| ```w``` | List currently logged in users and their processes. |
+| ```lastlog``` | Show when all users last logged in. |
+| ```whoami``` | Show current user name. |
+| ```id``` | Show current user information. |
+| ```sudo -l``` | List programs current user can run as root. |
+| ```find | head``` | Find all files in the current directory and sub-directories. |
+| ```find / -iname *.txt``` | Find all txt files (case insensitive) in /. |
+| ```find / -type f -exec grep -l "password" {} \;``` | List file names containing the word "password". |
+| ```find . -type f -name ".*"``` | Find all hidden files. |
 
 ### Linux Metasploit commands with post/linux/enum_system module
 * enum_configs
