@@ -10,15 +10,12 @@ systeminfo
 wmic qfe get Caption,Description,HotFixID,InstalledOn
 ```
 
+### Built-in command-lines that are helpful for enumeration.
 | Built-in Command-Line Command | Result |
 |-------------------------------|--------|
 | ```dir /h``` | Get help with the dir command. |
 | ```dir *.xlsx /s``` | Search the current directory and all subdirectories for Excel spreadsheets. |
-
-ipconfig /all
-	
-
-Show all IP information for all interfaces.
+| ```ipconfig /all``` | Show all IP information for all interfaces. |
 
 ipconfig /displaydns
 	
