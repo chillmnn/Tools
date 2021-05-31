@@ -52,33 +52,9 @@ List all shares on this machine.
 |-------------------|--------|
 | ```Get-Command``` | List all installed PowerShell cmdlets. |
 | ```Get-Command Get-*``` | List all cmdlets that start with "Get". |
-
-Get-LocalUser
-	
-
-List all local users on the machine.
-
-Get-LocalGroup
-	
-
-List all local groups on the machine.
-
-Get-LocalGroupMember <group name>
-	
-
-List all members of the given group.
-
-Get-Website
-	
-
-List websites on the machine.
-
-Get-ChildItem
-	
-
-List items and child items in a folder or Registry key.
-
-Get-ChildItem -Path C:\ -Include *.docx,*.xlsx,*.txt -File -Recurse -ErrorAction SilentlyContinue | Select-String password
-	
-
-Starting from C:\ recursively search every Word, Excel, and text file for the word "password", and display the path, file name, line number, and text on that line.
+| ```Get-LocalUser``` | List all local users on the machine. |
+| ```Get-LocalGroup``` | List all local groups on the machine. |
+| ```Get-LocalGroupMember <group name>``` | List all members of the given group. |
+| ```Get-Website``` | List websites on the machine. |
+| ```Get-ChildItem``` | List items and child items in a folder or Registry key. |
+| ```Get-ChildItem -Path C:\ -Include *.docx,*.xlsx,*.txt -File -Recurse -ErrorAction SilentlyContinue | Select-String password``` | Starting from C:\ recursively search every Word, Excel, and text file for the word "password", and display the path, file name, line number, and text on that line. |
