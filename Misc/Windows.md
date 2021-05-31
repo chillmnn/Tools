@@ -58,5 +58,5 @@ List all shares on this machine.
 | ```Get-Website``` | List websites on the machine. |
 | ```Get-ChildItem``` | List items and child items in a folder or Registry key. |
 
-* Get-ChildItem -Path C:\ -Include *.docx,*.xlsx,*.txt -File -Recurse -ErrorAction SilentlyContinue | Select-String password
+"Get-ChildItem -Path C:\ -Include *.docx,*.xlsx,*.txt -File -Recurse -ErrorAction SilentlyContinue | Select-String password"
 Starting from C:\ recursively search every Word, Excel, and text file for the word "password", and display the path, file name, line number, and text on that line.
