@@ -25,7 +25,7 @@ rdesktop -u <UserName> -d <Domain> -p <Password>  <IP>:<PORT>
 curl -X POST -F "submit:<value>" -F "<file-parameter>:@<path-to-file>" <site>
 ```
 
-### Linux Enumeration commands.
+### Linux enumeration using built-in bash.
 | Local Linux Bash Command | Result |
 |--------------------------|--------|
 | ```uname -a``` | Show all available system information. |
@@ -176,3 +176,4 @@ Find all hidden files.
 * enum_network
 * enum_protections
 * enum_users_history
+
