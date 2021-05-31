@@ -191,3 +191,13 @@ cat nmap.txt.gnmap | grep -i "Up" | awk '/Up/{print $2}'
 ```
 nmap -p80,443 <IP>/24 -oG - | nikto.pl -h -
 ```
+
+### Here are some examples of using Nmap for host vulnerability scanning.
+
+```nmap -Pn --script vuln <target>``` Check for common vulnerabilities.
+
+```nmap -Pn --script exploit <target>``` Scan for vulnerabilities and attempt to automatically exploit them.
+
+```nmap --script dos -Pn <target>``` Test to see if a host is vulnerable to DoS attacks.
+
+```nmap -sV -vv <target>``` Scan and interrogate ports for service version information. Produce very verbose output.
