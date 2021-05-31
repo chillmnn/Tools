@@ -30,86 +30,22 @@ curl -X POST -F "submit:<value>" -F "<file-parameter>:@<path-to-file>" <site>
 |--------------------------|--------|
 | ```uname -a``` | Show all available system information. |
 | ```hostname``` | Show computer host name. |
-
-route
-	
-
-Show route table.
-
-arp
-	
-
-Show ARP cache.
-
-ifconfig
-	
-
-Show interface configuration, including IP address.
-
-netstat -antp
-	
-
-Show TCP listening ports and socket status.
-
-netstat -anup
-	
-
-Show UDP listening ports and socket status.
-
-iptables -L
-	
-
-Display any firewall rules.
-
-mount
-	
-
-Show mounted storage devices or file systems.
-
-dpkg -l
-	
-
-List all packages installed on the system.
-
-apache2 -v
-	
-
-List information about Apache2 web server.
-
-mysql --version
-	
-
-List information about MySQL.
-
-df -a
-	
-
-Show disk information.
-
-cat /etc/*-release
-	
-
-Show distribution information.
-
-cat /proc/cpuinfo
-	
-
-Show information about the CPU.
-
-cat /etc/resolv.conf
-	
-
-List DNS servers host is using.
-
-cat /etc/network/interfaces
-	
-
-List interface IP configuration.
-
-cat /etc/passwd
-	
-
-List all users on the system.
+| ```route``` | Show route table. |
+| ```arp``` | Show ARP cache. |
+| ```ifconfig``` | Show interface configuration, including IP address. |
+| ```netstat -antp``` | Show TCP listening ports and socket status. |
+| ```netstat -anup``` | Show UDP listening ports and socket status. |
+| ```iptables -L``` | Display any firewall rules. |
+| ```mount``` | Show mounted storage devices or file systems. |
+| ```dpkg -l``` | List all packages installed on the system. |
+| ```apache2 -v``` | List information about Apache2 web server. |
+| ```mysql --version``` | List information about MySQL. |
+| ```df -a``` | Show disk information. |
+| ```cat /etc/*-release``` | Show distribution information. |
+| ```cat /proc/cpuinfo``` | Show information about the CPU. |
+| ```cat /etc/resolv.conf``` | List DNS servers host is using. |
+| ```cat /etc/network/interfaces``` | List interface IP configuration. |
+| ```cat /etc/passwd``` | List all users on the system. |
 
 cat /etc/group
 	
