@@ -171,8 +171,7 @@ find . -type f -name ".*"
 
 Find all hidden files.
 
-### Linux Metasploit commands.
-#### post/linux/enum_system module
+### Linux Metasploit commands with post/linux/enum_system module
 * enum_configs
 * enum_network
 * enum_protections
