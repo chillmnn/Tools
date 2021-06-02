@@ -17,3 +17,7 @@ nc –vv <target IP> <port number>
 ```
 nmap -sV <target IP> -p <port number>
 ```
+
+```
+nmap -sV --script=banner <target>
+```
