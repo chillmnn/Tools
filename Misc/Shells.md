@@ -1,9 +1,9 @@
 # List of useful shells to keep on hand.
 
 ### If python is installed you can make the shell more stable.
-```
-python -c 'import pty; pty.spawn("/bin/sh")'
-```
+* Use Python, Python2 or Python3 as required. ```python -c 'import pty; pty.spawn("/bin/sh")'```
+* This allows access to terminal commands. ```export TERM=xterm```
+* Background the shell using CTRL+Z. Then in your own terminal enter this ```stty raw -echo; fg``` to turn off terminal echo allowing access to tab autocompletes, the arrow keys, and Ctrl + C and foregrounds the shell.
 
 ### Powershell reverse shell. Just need to replace IP and PORT of your choice and copy into cmd.exe or another method of executing commands.
 ```
