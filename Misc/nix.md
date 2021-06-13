@@ -71,53 +71,13 @@ curl -X POST -F "submit:<value>" -F "<file-parameter>:@<path-to-file>" <site>
 |------|-------------|
 | GRUB (/boot/grub) | Most commonly used bootloader package that loads the Linux kernel. |
 | /etc/passwd | List of all local accounts. |
-
-/etc/shadow
-	
-
-Password hashes for all local accounts.
-
-/etc/group
-	
-
-List of all local groups.
-
-/etc/gshadow
-	
-
-Password hashes for local groups.
-
-/proc/cmdline
-	
-
-Kernel parameters.
-
-/etc/rc.*
-	
-
-Run commands.
-
-/etc/profile
-	
-
-Sets system-wide environment variables on user shells.
-
-/etc/hosts
-	
-
-Host-name-to-IP mappings—checked before DNS for name resolution.
-
-/etc/resolv.conf
-	
-
-Lists DNS servers for system to use.
-
-/etc/pam.d
-	
-
-Password and lockout policies.
-
-~/.bash_profile, ~/.bash_login, ~/.profile, /home/user/.bashrc, /etc/bash.bash.rc, /etc/profile.d
-	
-
-Possible locations to insert a script that will run when the shell starts. 
+| /etc/shadow | Password hashes for all local accounts. |
+| /etc/group | List of all local groups. |
+| /etc/gshadow | Password hashes for local groups. |
+| /proc/cmdline | Kernel parameters. |
+| /etc/rc.* | Run commands. |
+| /etc/profile | Sets system-wide environment variables on user shells. |
+| /etc/hosts | Host-name-to-IP mappings—checked before DNS for name resolution. |
+| /etc/resolv.conf | Lists DNS servers for system to use. |
+| /etc/pam.d | Password and lockout policies. |
+| ~/.bash_profile, ~/.bash_login, ~/.profile, /home/user/.bashrc, /etc/bash.bash.rc, /etc/profile.d | Possible locations to insert a script that will run when the shell starts. |
