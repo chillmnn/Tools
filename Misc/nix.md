@@ -67,20 +67,10 @@ curl -X POST -F "submit:<value>" -F "<file-parameter>:@<path-to-file>" <site>
 * enum_users_history
 
 # Sensitive Linux Files
-File
-	
-
-Description
-
-GRUB (/boot/grub)
-	
-
-Most commonly used bootloader package that loads the Linux kernel.
-
-/etc/passwd
-	
-
-List of all local accounts.
+| File | Description |
+|------|-------------|
+| GRUB (/boot/grub) | Most commonly used bootloader package that loads the Linux kernel. |
+| /etc/passwd | List of all local accounts. |
 
 /etc/shadow
 	
