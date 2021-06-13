@@ -54,21 +54,10 @@ You can search for services that have this vulnerability using:
 
 # Windows Account Manipulation
 ### You will need administrator or SYSTEM level privilege to run some of these commands.
-
-To Do This Action:
-	
-
-Run This Command:
-
-List all users
-	
-
-net user
-
-See information about guest
-	
-
-net user guest
+| To Do This Action: | Run This Command: |
+|--------------------|-------------------|
+| List all users | net user |
+| See information about guest | net user guest |
 
 Search the status of guest to determine if it's active (enabled) or not
 	
