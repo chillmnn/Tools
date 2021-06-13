@@ -58,28 +58,8 @@ You can search for services that have this vulnerability using:
 |--------------------|-------------------|
 | List all users | net user |
 | See information about guest | net user guest |
-
-Search the status of guest to determine if it's active (enabled) or not
-	
-
-net user guest | findstr /C:"active"
-
-Activate (enable) guest
-	
-
-net user guest /active:yes
-
-Set/change the guest password to Pa22w0rd
-	
-
-net user guest Pa22w0rd
-
-Add guest to the local administrators group
-	
-
-net localgroup administrators /add guest
-
-View the SID of each account
-	
-
-wmic useraccount get name,sid
+| Search the status of guest to determine if it's active (enabled) or not | net user guest | findstr /C:"active" |
+| Activate (enable) guest | net user guest /active:yes |
+| Set/change the guest password to Pa22w0rd | net user guest Pa22w0rd |
+| Add guest to the local administrators group | net localgroup administrators /add guest |
+| View the SID of each account | wmic useraccount get name,sid |
