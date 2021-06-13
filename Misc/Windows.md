@@ -44,4 +44,11 @@ wmic qfe get Caption,Description,HotFixID,InstalledOn
 ### To view the secret message.
 ```C:\>notepad.exe test.txt:hidden.txt```
 
-#
+# Unquoted Service Paths
+
+You can search for services that have this vulnerability using:
+
+* Metasploit module ```exploit/windows/local/trusted_service_path```
+* PowerSploit ```Get-ServiceUnquoted cmdlet```
+* WMIC query ```wmic service get name,displayname,pathname,startmode |findstr /i “auto” |findstr /i /v “c:\windows\\” |findstr /i /v “””```
+
