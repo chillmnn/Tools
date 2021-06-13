@@ -35,3 +35,13 @@ wmic qfe get Caption,Description,HotFixID,InstalledOn
 | ```Get-ChildItem``` | List items and child items in a folder or Registry key. |
 
 "Get-ChildItem -Path C:\ -Include *.docx,*.xlsx,*.txt -File -Recurse -ErrorAction SilentlyContinue | Select-String password" Starting from C:\ recursively search every Word, Excel, and text file for the word "password", and display the path, file name, line number, and text on that line.
+
+# Alternate Data Streams (ADS)
+
+### This creates an empty file called test.txt, while simultaneously creating a hidden file called hidden.txt. 
+```C:\>echo "Super secret info" > test.txt:hidden.txt```
+
+### To view the secret message.
+```C:\>notepad.exe test.txt:hidden.txt```
+
+#
