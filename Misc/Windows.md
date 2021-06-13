@@ -52,8 +52,8 @@ You can search for services that have this vulnerability using:
 * PowerSploit ```Get-ServiceUnquoted cmdlet```
 * WMIC query ```wmic service get name,displayname,pathname,startmode |findstr /i “auto” |findstr /i /v “c:\windows\\” |findstr /i /v “””```
 
-### Windows Account Manipulation
-##### You will need administrator or SYSTEM level privilege to run some of these commands.
+# Windows Account Manipulation
+### You will need administrator or SYSTEM level privilege to run some of these commands.
 
 To Do This Action:
 	
