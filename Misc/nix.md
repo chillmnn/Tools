@@ -5,7 +5,7 @@
 base64 -d <filename.txt>
 ```
 
-### Display is package is installed.
+### Display if package is installed.
 ```
 dpkg -s <package name>
 ```
