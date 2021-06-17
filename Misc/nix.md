@@ -25,6 +25,9 @@ rdesktop -u <UserName> -d <Domain> -p <Password>  <IP>:<PORT>
 curl -X POST -F "submit:<value>" -F "<file-parameter>:@<path-to-file>" <site>
 ```
 
+### Create a new password.
+```mkpasswd -m sha-512 <password>```
+
 ### Linux enumeration using built-in bash.
 | Local Linux Bash Command | Result |
 |--------------------------|--------|
