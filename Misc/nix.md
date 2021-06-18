@@ -87,3 +87,11 @@ curl -X POST -F "submit:<value>" -F "<file-parameter>:@<path-to-file>" <site>
 | /etc/resolv.conf | Lists DNS servers for system to use. |
 | /etc/pam.d | Password and lockout policies. |
 | ~/.bash_profile, ~/.bash_login, ~/.profile, /home/user/.bashrc, /etc/bash.bash.rc, /etc/profile.d | Possible locations to insert a script that will run when the shell starts. |
+
+### Covering Tracks
+* ```echo "" > /var/log/syslog``` Example of clearing the entire syslog.
+* ```sed -i '/<KEYWORD>/d' /var/log/auth.log``` Using sed to delete all lines matching the given string while keeping the other lines intact.
+* ```export HISTSIZE=0``` Setting the command history to zero before executing the commands.
+* ```echo "" > ~/.bash_history and history -c``` In case the system has already recorded a shell history and you want to delete it.
+* ```shred -zu /root/keylog.bin``` Will overwrite the file with zeros to hide the fact that it was shredded, then the file will be removed.
+* ```file.docx -z "08/11/2019 18:22:06"``` You can use the timestomp command in Meterpreter to change MACE values.
