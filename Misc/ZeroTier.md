@@ -15,8 +15,17 @@ On your ZeroTier account create a new network and copy the network ID. Then on t
 sudo zerotier-cli join <NetworkID>
 ```
 
+Once that is ran. Go back to the ZeroTier console and configure its setting. Note that a new is required.
+
 To ensure the drone connects to the ZeroTier network on startup enter this.
 ```
 sudo touch /var/lib/zerotier-one.d/<NetworkID>.conf
+```
+
+```
+
+To verfity the drone is connected run.
+```
+sudo zerotier-cli listennetworks
 ```
 
