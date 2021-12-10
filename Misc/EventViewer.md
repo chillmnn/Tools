@@ -5,4 +5,5 @@ As Microsoft states "enables you to retrieve information about event logs and pu
 * Access help files `wevtutil.exe /?`
 * Provides help on specific command `wevtutil COMMAND /?`
 * Displays number of logs on the host `wevtutil.exe el | Measure-Object`
-* 
+* Gets all the event logs, using the wildcard asterick to display information about each log `Get-WinEvent -ListLog *`
+* Examples retreives all providers that write to Applications log `(Get-WinEvent -ListLog Application).ProviderNames` 
