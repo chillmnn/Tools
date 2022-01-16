@@ -63,6 +63,7 @@ curl -X POST -F "submit:<value>" -F "<file-parameter>:@<path-to-file>" <site>
 | ```find / -iname *.txt``` | Find all txt files (case insensitive) in /. |
 | ```find / -type f -exec grep -l "password" {} \;``` | List file names containing the word "password". |
 | ```find . -type f -name ".*"``` | Find all hidden files. |
+|```find / -user root -perm /4000``` | Find SUID permissions. |
 
 "find | head" Find all files in the current directory and sub-directories.
 
