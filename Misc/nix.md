@@ -5,6 +5,11 @@
 base64 -d <filename.txt>
 ```
 
+### DNS lookup of a mail server.
+```
+dig mx <domain.com>
+```
+
 ### Display if package is installed.
 ```
 dpkg -s <package name>
