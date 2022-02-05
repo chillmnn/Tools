@@ -81,4 +81,5 @@ Hide packets from a capture display
 | Host name filter                        | ```ip.host = hostname```                                             |
 | MAC address filter                      | ```eth.addr == 00:70:f4:23:18:c4```                                  |
 | RST flag filter                         | ```tcp.flags.reset == 1```                                           |
-| log4j filter host by destination        | ````(ip contains jndi) or (tcp.flags==0x002 and ip.dst==<host IP>)```` |
+| log4j filter syn as destination        | ````(ip contains jndi) or (tcp.flags==0x002 and ip.dst==<host IP>)```` |
+| log4j filter syn as source        | ````(ip contains jndi) or (tcp.flags==0x002 and ip.src==<host IP>)```` |
