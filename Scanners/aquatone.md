@@ -9,4 +9,6 @@ Download Chrome on Kali `google.com/chrome`
 
 Install Chrome `apt install ./google-chrome-stable_current_amd64.deb`
 
+Can also install Chromium for better results. `sudo apt install chromium`
+
 Usage: `cat alivedomains.txt | ./aquatone`
